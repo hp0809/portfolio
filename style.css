@@ -66,7 +66,10 @@ section {
 
 .aboutMe {
     background: rgba(48, 25, 71, 0.6);
-    
+}
+
+.aboutMe img {
+    width: 60%;
 }
 
 .projects{
@@ -74,7 +77,7 @@ section {
 }
 
 .projects img {
-    width: 80%;
+    width: 60%;
 }
 
 .contact {
