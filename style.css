@@ -66,8 +66,10 @@ section {
 
 .aboutMe {
     background: rgba(48, 25, 71, 0.6);
-    
 }
+
+.aboutMe img {
+    width: 80%;
 
 .projects{
     background: rgba(118,85,154,0.6);
