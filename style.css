@@ -69,7 +69,11 @@ section {
 }
 
 .aboutMe img {
+<<<<<<< HEAD
     width: 60%;
+=======
+    width: 80%;
+>>>>>>> ed6d59279ffc5f7cbd41c4c8daf5cba01c0b107c
 }
 
 .projects{
