@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>HTML wireframe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,9 +8,9 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <a href="#main">Skip to main content</a>
         <div id="grad">
-        <header>
-            <a id="top"><i class="fas fa-caret-up fa-2x"></i></a>
+        <header role="banner" id="top">
             <i class="fas fa-caret-down fa-3x"></i>
             <div class="mobileNav">
                 <nav role="navigation" class="mobileMenu" id="menuDropdown">
@@ -32,7 +32,7 @@
                 <h2>  A web developer  </h2>
             </div>
         </header> 
-        <main >
+        <main role="main" id="main">
             <section class="aboutMe">
                 <h2 id="aboutMe">About Me</h2>
                 <img src="portfolio-mock-pictures/itsMe.JPG" alt="It's me; Hali Power">
@@ -68,7 +68,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="script.js"></script>   
     </body>
-    <footer>
+    <footer role="contentinfo">
         <ul class="social">
             <li><a href="https://www.linkedin.com/in/hali-m-m-power/"><i class="fab fa-linkedin fa-2x"></i></a></li>
             <li><a href="https://github.com/hp0809/"><i class="fab fa-github-square fa-2x"></i></a></li>
