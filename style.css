@@ -5,51 +5,100 @@
 font-family: 'Unica One', cursive;
 */
 body {
-    font-family: "Unica One", sans-serif;
-    text-align: center;
+    font-family: "Unica One", sans-serif;    
     background-image: url("portfolio-mock-pictures/milky-way.jpg");
-    background-repeat: none;
     background-size: cover;
     background-attachment: fixed; 
-    margin: 0;
+    margin: 0;  
+    text-shadow: 1px 1px 1px black;
 }
 
-.nameTitle {
-    padding-top: 100px;
-    background: rgba(26,22,83,0.6);
+#grad {
+    background-image: linear-gradient(rgba(26,22,83,0.8),rgba(48,25,71,0.8),rgba(118,85,154,0.8),rgba(168, 95, 149, 0.8));
     width:80%;
-    color: rgb(223, 219, 219);
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 10px;
+  }
+main {
+    margin: 20px;
+}
+
+.fa-caret-up {
+    display: none;
+}
+.nameTitle {
+    width:80%;
+    color: white;
     height: 400px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
 }
 
 h1 {
-    padding-top: 70px;
-    font-family: 'Unica One', cursive;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 100px;
+    letter-spacing: 1px;
+} 
+h2 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+    text-decoration: underline overline;
+    letter-spacing: 1px;
 }
 h3 {
-    font-family: 'Unica One', cursive;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
 }
 
 p, li {
     font-family: 'Muli', sans-serif;
     line-height: 20px;
+    text-align: left;
+    font-size: 18px;
 }
-
+.mobileNav, .mobileMenu {
+    display: none;
+}
 nav {
     width: 100%;
-    background: rgb(26,22,83);
+    background: rgba(26,22,83,0.8);
     color: rgb(223, 219, 219);
     text-shadow: 1px 1px 1px black;
     display: flex;
     justify-content: center;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    padding: 10px;  
+}
 nav li {
-    display: inline;
-    
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    padding-left: 20px; 
+}
+
+nav li:after, nav li:before {
+    content: "  |  ";
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+
+.tabletDesktopNav a:hover {
+    color: gray;
+    cursor: pointer;
 }
 
 section {
@@ -64,24 +113,54 @@ section {
     text-shadow: 1px 1px 1px black;
 }
 
-.aboutMe {
-    background: rgba(48, 25, 71, 0.6);
+.aboutMe p {
+    
+    padding-top: 15px;
 }
 
+.show {
+    display: block;
+}
 .aboutMe img {
     width: 60%;
 }
 
-.projects{
-    background: rgba(118,85,154,0.6);
-}
 
 .projects img {
-    width: 60%;
+    width: 100%;
 }
 
-.contact {
-    background: rgba(197,113,175, 0.6);
+
+.projects a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.stack i{
+    padding-bottom:10px;
+    padding-right: 10px;
+    padding-left: 10px;
+   
+    
+}
+.contact p, li{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact ul {
+    padding-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+}
+.contact li {
+    list-style: none;
+}
+
+.contact li a {
+    text-decoration: none;
 }
 
 footer {
@@ -91,23 +170,250 @@ footer {
     display: flex;
     justify-content: center;
 }
-
+footer ul {
+    display: inline;
+}
 footer li {
     display: inline;
 }
-
-.social a:link {
-    color: white;
-}
-.social a:visited {
-    color: white;
+.live:after {
+    content: " | ";
 }
 
-.social a::after {
-    color: white;
+.social {
+    width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2px;
 }
 
-.social a:hover {
+.social a:link, .contactIcon a:link, .projects a:link, nav li a:link {
+    color: white;
+}
+.social a:visited, .contactIcon a:visited, .projects a:visited, nav li a:visited {
+    color: rgb(192, 190, 190);
+}
+
+.social a:hover, .contactIcon a:hover, .projects a:hover, nav li a:hover {
     color: gray;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 520px) {
+    body {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .fa-3x {
+        color: white;
+        position: fixed;
+        right: 10px;
+        top: 1px;
+        z-index: 11;
+    }
+
+    .tabletDesktopNav {
+        display: none;
+    }
+    
+    #menuDropdown {
+        position: fixed;
+        right: 10px;
+        top:35px;
+        width: 90px;
+        font-size: 10px;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;  
+        border-radius: 10px; 
+        background: rgba(26,22,83,0.9); 
+    }
+    .mobileMenu p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        font-family: 'Philosopher', sans-serif;
+    }
+
+    .mobileMenu a {
+        text-decoration: none;
+    }
+    .mobileMenu a:link {
+        color: white;
+    }
+    .mobileMenu a:visited {
+        color: white;
+    }
+    
+    .mobileMenu a::after {
+        color: white;
+    }
+    
+    .mobileMenu a:hover {
+        color: gray;
+        cursor: pointer;
+    }
+    
+    .mobileNav {
+        display:none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    section {
+        min-height: 100px;
+    }
+    .nameTitle {
+        height: 200px;
+    }
+    h1 {
+       font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    #more {
+        display: none;
+    }
+    .readMore {
+        width: 80%;
+        color: white;
+        background: none;
+        border-bottom: none;
+        border-left:none;
+        border-right: none;
+        border-top: 1px white dotted;
+    }
+    .readMore:hover{
+        cursor: pointer;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .contact ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2px;
+    }
+    .contact li a{
+        text-decoration: none;
+    }
+    footer {
+        display: none;
+    }
+}
+@media (min-width: 521px) and (max-width: 1024px) {
+    .mobileNav, .fa-caret-down {
+        display: none;
+    }
+    #more {
+        display: none;
+    }
+    .readMore {
+        width: 80%;
+        color: white;
+        background: none;
+        border-bottom: none;
+        border-left:none;
+        border-right: none;
+        border-top: 1px white dotted;
+    }
+    h1 {
+        font-size: 65px;
+     }
+     h2 {
+         font-size: 35px;
+     }
+     h3 {
+         font-size: 25px;
+     }
+    .readMore:hover{
+        cursor: pointer;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+}
+@media (min-width: 1025px) {
+    .mobileNav, .fa-caret-down {
+        display: none;
+    }
+    .readMore, #dots{
+        display: none;
+
+    }
+    #button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+
 }

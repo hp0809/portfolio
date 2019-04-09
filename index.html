@@ -4,51 +4,75 @@
         <title>HTML wireframe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Unica+One|Muli" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher|Muli" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <div id="grad">
         <header>
-            <nav role="navigation">
+            <a id="top"><i class="fas fa-caret-up fa-2x"></i></a>
+            <i class="fas fa-caret-down fa-3x"></i>
+            <div class="mobileNav">
+                <nav role="navigation" class="mobileMenu" id="menuDropdown">
+                    <p><a href="#top">Top</a></p>
+                    <p><a href="#aboutMe">About Me</a></p>
+                    <p><a href="#projects">My Projects</a></p>
+                    <p><a href="#contact">Contact Me </a></p>
+                </nav>
+            </div>                  
+            <nav role="navigation" class="tabletDesktopNav">
                 <ul>
-                    <li>About Me</li>
-                    <li>My Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
-            </nav>
+                </nav>
             <div class="nameTitle">
-                <h1>Hali Power</h1>
-                <h3>A web developer</h3>
+                <h1>  Hali Power  </h1>
+                <h2>  A web developer  </h2>
             </div>
         </header> 
-        <main>
+        <main >
             <section class="aboutMe">
-                <h3>About Me</h3>
+                <h2 id="aboutMe">About Me</h2>
                 <img src="portfolio-mock-pictures/itsMe.JPG" alt="It's me; Hali Power">
-                <p>My name is Hali Power. It took be years to actually reflect on my career choices to decide to go back to web development. Now that I have, I will never be going back! What was lacking for me in my other job choices is the fact I wanted to continuously learn. Web development provides this with a constant changing environment with new technologies to learn and develop! With this passion for learning, I am a very motivated person that loves working with a group as well as working remotely.<br>I originally hail from Canada (eh?), however, aside from my passion for web development, I love travelling the world. This is also another motivation for immersing myself in the web development world as it provides a more flexible work environment where I can go where I want, doing what I love. I also share this passion for coding and travelling with my passion for puzzle games, which you can find me playing if not doing the former two activities. If you also share the same passions or wish to inquire more about myself and what I can provide in a professional environment, please feel free to contact me! I will be looking forward to speaking with you!
-                        </p> 
+                <p>My name is Hali Power. It took be years to actually reflect on my career choices to decide to go back to web development. Now that I have, I will never be going back! What was lacking for me in my other job choices is the fact I wanted to continuously learn. Web development provides this with a constant changing environment with new technologies to learn and develop! With this passion for learning, I am a very motivated person that loves working with a group as well as working remotely.
+                    <span id="dots">...</span><br><br>
+                <span id="more">I originally hail from Canada (eh?), however, aside from my passion for web development, I love travelling the world. This is also another motivation for immersing myself in the web development world as it provides a more flexible work environment where I can go where I want, doing what I love. I also share this passion for coding and travelling with my passion for puzzle games, which you can find me playing if not doing the former two activities. If you also share the same passions or wish to inquire more about myself check the links below!</span></p>
+                <button id="readMore" class="readMore">Read More</button>
             </section>
             <section class="projects">
+                <h2 id="projects">  Projects  </h2>
                 <h3>Manatee Quiz</h3>
-                <img src="portfolio-mock-pictures/manatee-quiz-screencap.png" alt="Manatee Quiz screen cap">
+                <div class="stack">
+                    <i class="fab fa-html5 fa-2x"></i>
+                    <i class="fab fa-css3-alt fa-2x"></i>
+                    <i class="fab fa-js-square fa-2x"></i>
+                </div>
+                <img id="manateeQuiz" class="manateeQuiz" src="portfolio-mock-pictures/manatee-quiz-screencap.png" alt="Manatee Quiz screen cap">
                 <p>This is a project of a simple multiple-choice quiz to test your knowledge of manatees (one of my favourite animals!). It takes you through 10 multiple-choice questions and if you get the correct answer you are rewarded with a very cute picture of a manatee. Why not test your knowledge?</p>
+                <a class="live" href="https://hp0809.github.io/quiz-app/">LIVE</a>
+                <a class="repo" href="https://github.com/hp0809/quiz-app">REPO</a>
             </section>
             <section class="contact">
-                <h3>Contact Me</h3>
-                <p>If you like the work I've done, please feel free to conatct me if you are interested in hiring myself, networking, or just want to chat. You can get in touch with my via linkedin, github, or e-mail. I'm looking forward to hearing from you!</p>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/hali-m-m-power/"><i class="fab fa-linkedin white"></i></a>LinkedIn</li>
-                    <li><a href="https://github.com/hp0809/"><i class="fab fa-github-square"></i>GitHub</a></li>
-                    <li><a href = "mailto: abc@example.com">Send Email</a>E-mail Me!</li>
+                <h2 id="contact">  Contact Me  </h2>
+                <p>Please feel free to conatct me if you are interested in hiring, networking, or just want to chat.<br> I'm looking forward to hearing from you!</p>
+                <ul class="contactIcon">
+                    <li><a href="https://www.linkedin.com/in/hali-m-m-power/"><i class="fab fa-linkedin "></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/hp0809/"><i class="fab fa-github-square "></i> GitHub</a></li>
+                    <li><a href = "mailto: hpower0809@gmail.com"><i class="fas fa-envelope-square "></i> E-mail</a></li>
                 </ul>
             </section>
-        </main>   
+        </main>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>   
     </body>
     <footer>
         <ul class="social">
-            <li><a href="https://www.linkedin.com/in/hali-m-m-power/"><i class="fab fa-linkedin white"></i></a></li>
-            <li><a href="https://www.instagram.com/TeaforBunny"><i class="fab fa-instagram white"></i></a></li>
-            <li><a href="https://twitter.com/TeaforBunny"><i class="fab fa-twitter-square white"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/hali-m-m-power/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/hp0809/"><i class="fab fa-github-square fa-2x"></i></a></li>
+            <li><a href = "mailto: hpower0809@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
         </ul>
     </footer>
 </html>
