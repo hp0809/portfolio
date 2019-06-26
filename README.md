@@ -11,7 +11,7 @@ My portfolio that gives a little about me and the projects I've worked on. It is
 
 ## Go check it out!
 
-[LIVE](https://hp0809.github.io/Manatee-Quiz/)
+[LIVE](https://hp0809.github.io/portfolio/)
 
 
 ## Built with:
