@@ -14,7 +14,7 @@ My portfolio that gives a little about me and the projects I've worked on. It is
 [LIVE](https://hp0809.github.io/Manatee-Quiz/)
 
 
-## Buildt with:
+## Built with:
 Tech used:
  * HTML5
  * CSS3
