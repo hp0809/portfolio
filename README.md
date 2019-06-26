@@ -3,7 +3,7 @@
 
 My portfolio that gives a little about me and the projects I've worked on. It is built with mobile-first design so you can view it on any of your devices.
 
-## Sreenshot
+## Screenshot
 
 
 
