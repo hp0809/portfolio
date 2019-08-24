@@ -139,10 +139,6 @@ section {
     content: " | ";
 }
 
-.repo:after {
-    content: " | "
-}
-
 .contact p, li{
     text-align: center;
     margin-left: auto;
